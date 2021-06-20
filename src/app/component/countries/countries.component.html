@@ -1,0 +1,24 @@
+<div class="countriesWrapper">
+    <div class="countriesContent">
+        <h1 *ngIf='data == "2"'>Countries</h1>
+        <div class="boxWrapper firstBoxWrapper">
+            <div class="box" (click)='countrySelected(country[0].name)'>
+                {{ country[0].name }}
+            </div>
+            <div class="box" (click)='countrySelected(country[1].name)'>
+                {{ country[1].name }}
+            </div>
+            <div class="box" (click)='countrySelected(country[2].name)'>
+                {{ country[2].name }}
+            </div>
+        </div>
+        <div class="boxWrapper">
+            <div class="box" (click)='countrySelected(country[3].name)'>
+                {{ country[3].name }}
+            </div>
+            <div class="box" (click)='countrySelected(country[4].name)'>
+                {{ country[4].name }}
+            </div>
+        </div>
+    </div>
+</div>

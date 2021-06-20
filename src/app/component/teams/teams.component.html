@@ -1,0 +1,41 @@
+<div class="teamsWrapper">
+    <div class="teamContent">
+        <h1>Teams</h1>
+
+        <div *ngIf = "selectedTeam != ''" class="teamDetailWrapper">
+            <div class="teamName">
+                {{selectedTeam}}
+            </div>
+            <div *ngFor='let data of teamData' class="playersName">
+                <div class="name" >
+                    Name : {{data.name}}
+                </div>
+                <div class="skill" >
+                    Skill : {{data.skill}}
+                </div>
+                <div class="age" >
+                    Age : {{data.age}}
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf = "selectedTeam == ''" class="allPlayers" >
+            <div *ngFor='let allPlayer of allPlayers' class="countryAndPlayersWrapper">
+                <div class="countryName">
+                    {{allPlayer.country}}
+                </div>
+                <div *ngFor= 'let data of allPlayer.players' class="playersName" >
+                    <div class="name" >
+                        Name : {{data.name}}
+                    </div>
+                    <div class="skill" >
+                        Skill : {{data.skill}}
+                    </div>
+                    <div class="age" >
+                        Age : {{data.age}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

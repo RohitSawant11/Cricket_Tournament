@@ -1,0 +1,35 @@
+.productsPageWrapper {
+    padding: 10px;
+    background-image: url('/assets/ground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .ProductsContent {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 1200px;
+        text-align: center;
+        h1 {
+            color: white;
+            font-size: 35px;
+        }
+        .boxWrapper {
+            display: flex;
+            justify-content: space-evenly;
+            .box {
+                padding: 50px;
+                border-radius: 38px;
+                color: black;
+                font-size: 25px;
+                border: 1px solid;
+                box-shadow: 5px 10px #888888;
+                width: 122px;
+                cursor: pointer;
+            }
+        }
+        .firstBoxWrapper {
+            margin: 5px 0 35px;
+        }
+    }
+}

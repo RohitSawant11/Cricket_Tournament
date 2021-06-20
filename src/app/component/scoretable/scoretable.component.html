@@ -1,0 +1,22 @@
+<div class="pointTableWrapper">
+    <div class="pointTableContent">
+        <h1>Points Table</h1>
+        <table>
+            <tr>
+                <th>country</th>
+                <th>played</th>
+                <th>won</th>
+                <th>lost</th>
+                <th>points</th>
+              </tr>
+
+              <tr *ngFor= 'let data of table'>
+                  <td>{{data.country}}</td>
+                  <td>{{data.played}} </td>
+                  <td>{{data.won}} </td>
+                  <td>{{data.lost}} </td>
+                  <td>{{data.points}} </td>
+              </tr>
+        </table>
+    </div>
+</div>
